@@ -12,6 +12,15 @@ function AreaOfTriangle(Base, Height) {
     return result;
 }
 
-var area = AreaOfTriangle(2,1);
+
+function AreaOfCircle(Radius) {
+    var result = Math.PI * Math.pow(Radius, 2);
+    return result;
+}
+
+var area = AreaOfTriangle(2, 1);
+var areaCircle = AreaOfCircle(1);
+
 console.log(area);
+console.log(areaCircle);
 

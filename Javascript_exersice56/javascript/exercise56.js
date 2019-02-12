@@ -18,9 +18,22 @@ function AreaOfCircle(Radius) {
     return result;
 }
 
-var area = AreaOfTriangle(2, 1);
-var areaCircle = AreaOfCircle(1);
+var areaTriangle = AreaOfTriangle(2, 1);
+var areaCircle = AreaOfCircle(2);
 
-console.log(area);
+console.log(areaTriangle);
 console.log(areaCircle);
 
+function Area(X, Height) {
+    var result;
+
+    if (typeof Height === undefined) {
+        result = [ AreaOfCircle(X), X * X, undefined];
+    }
+    else {
+        result = [AreaOfCircle(X), X * Height, AreaOfTriangle(X, Height)];
+    }
+    return result;
+}
+
+console.log(Area(2,1));

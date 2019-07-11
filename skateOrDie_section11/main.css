@@ -5,4 +5,21 @@
 
 .sectionLight {
     background-color: #eceeef;
+    padding: 2rem;
+}
+
+.sectionDark {
+    background-color: #cccccc;
+    padding: 2rem;
+}
+
+.getWrapper {
+    margin-top: 20px;
+}
+
+button.getBtn {
+    background-color: red;
+    color: #ffffff;
+    display: block;
+    margin: auto;
 }
